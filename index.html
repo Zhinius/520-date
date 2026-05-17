@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>520 Date Plan</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #fff8f0);
+      color: #333;
+    }
+
+    .page {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 32px 18px 50px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin: 0 0 12px;
+      color: #c9184a;
+    }
+
+    .hero p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 720px;
+      color: #5c2b38;
+    }
+
+    .date-box {
+      margin: 24px auto 0;
+      max-width: 560px;
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(201, 24, 74, 0.16);
+      border-radius: 18px;
+      padding: 16px 18px;
+      font-size: 15px;
+      line-height: 1.6;
+      box-shadow: 0 8px 24px rgba(201, 24, 74, 0.08);
+    }
+
+    .section-title {
+      text-align: center;
+      color: #9d174d;
+      font-size: 24px;
+      margin: 36px 0 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      background: #f5f5f5;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      color: #c9184a;
+      font-size: 22px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ffe3ec;
+      color: #9d174d;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .info-list {
+      margin: 10px 0 18px;
+      padding-left: 20px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: #ff5c8a;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .button:hover {
+      background: #c9184a;
+    }
+
+    .activity-section {
+      margin-top: 42px;
+      background: rgba(255, 255, 255, 0.72);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    }
+
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .activity {
+      background: white;
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid #ffe0ea;
+    }
+
+    .activity h4 {
+      margin: 0 0 8px;
+      color: #c9184a;
+    }
+
+    .activity p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #7a2e44;
+      font-size: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .card img {
+        height: 170px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <section class="hero">
+      <h1>Happy 520, my love 💕</h1>
+
+      <p>
+        I planned a few dinner options for our 520 date.
+        You just need to choose which one you feel like going for,
+        and I will handle the rest.
+      </p>
+
+      <div class="date-box">
+        <strong>Date:</strong> 29 May 2026 <br>
+        <strong>Your task:</strong> Pick our dinner spot hehe
+      </div>
+    </section>
+
+    <h2 class="section-title">Pick Our Dinner Spot 🍽️</h2>
+
+    <section class="cards">
+
+      <!-- OPTION 1: MR STORK -->
+      <div class="card">
+        <img src="images/Mr Stork.webp" alt="Mr Stork">
+
+        <div class="card-content">
+          <span class="tag">Option 1</span>
+          <h3>Mr Stork</h3>
+
+          <ul class="info-list">
+            <li><strong>Cuisine:</strong> Western Asian fusion</li>
+            <li><strong>Vibe:</strong> Rooftop, romantic, scenic</li>
+          </ul>
+
+          <a
+            class="button"
+            href="mailto:isanayushiro@gmail.com?subject=My%20520%20Dinner%20Choice&body=I%20choose%20Mr%20Stork%20for%20our%20520%20date%20💕"
+          >
+            I choose this 💌
+          </a>
+        </div>
+      </div>
+
+      <!-- OPTION 2: THE SUMMERHOUSE -->
+      <div class="card">
+        <img src="images/The summer house.jpg" alt="The Summerhouse">
+
+        <div class="card-content">
+          <span class="tag">Option 2</span>
+          <h3>The Summerhouse</h3>
+
+          <ul class="info-list">
+            <li><strong>Cuisine:</strong> Modern European and farm-to-table Asian grill</li>
+            <li><strong>Vibe:</strong> Garden, cosy, romantic</li>
+          </ul>
+
+          <a
+            class="button"
+            href="mailto:isanayushiro@gmail.com?subject=My%20520%20Dinner%20Choice&body=I%20choose%20The%20Summerhouse%20for%20our%20520%20date%20💕"
+          >
+            I choose this 💌
+          </a>
+        </div>
+      </div>
+
+      <!-- OPTION 3: ARBORA -->
+      <div class="card">
+        <img src="images/Arbora.jpg" alt="Arbora">
+
+        <div class="card-content">
+          <span class="tag">Option 3</span>
+          <h3>Arbora</h3>
+
+          <ul class="info-list">
+            <li><strong>Cuisine:</strong> Western Asian fusion</li>
+            <li><strong>Vibe:</strong> Hilltop, scenic, casual romantic</li>
+          </ul>
+
+          <a
+            class="button"
+            href="mailto:isanayushiro@gmail.com?subject=My%20520%20Dinner%20Choice&body=I%20choose%20Arbora%20for%20our%20520%20date%20💕"
+          >
+            I choose this 💌
+          </a>
+        </div>
+      </div>
+
+      <!-- OPTION 4: ALTRO ZAFFERANO -->
+      <div class="card">
+        <img src="images/altro zafferano.jpg" alt="Altro Zafferano">
+
+        <div class="card-content">
+          <span class="tag">Option 4</span>
+          <h3>Altro Zafferano</h3>
+
+          <ul class="info-list">
+            <li><strong>Cuisine:</strong> Italian</li>
+            <li><strong>Vibe:</strong> Classy, elegant, romantic</li>
+          </ul>
+
+          <a
+            class="button"
+            href="mailto:isanayushiro@gmail.com?subject=My%20520%20Dinner%20Choice&body=I%20choose%20Altro%20Zafferano%20for%20our%20520%20date%20💕"
+          >
+            I choose this 💌
+          </a>
+        </div>
+      </div>
+
+      <!-- OPTION 5: FAT COW -->
+      <div class="card">
+        <img src="images/Fat Cow.webp" alt="Fat Cow">
+
+        <div class="card-content">
+          <span class="tag">Option 5</span>
+          <h3>Fat Cow</h3>
+
+          <ul class="info-list">
+            <li><strong>Cuisine:</strong> Japanese</li>
+            <li><strong>Vibe:</strong> Premium, intimate, refined</li>
+          </ul>
+
+          <a
+            class="button"
+            href="mailto:isanayushiro@gmail.com?subject=My%20520%20Dinner%20Choice&body=I%20choose%20Fat%20Cow%20for%20our%20520%20date%20💕"
+          >
+            I choose this 💌
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="activity-section">
+      <h2 class="section-title" style="margin-top: 0;">Possible Activities Before Dinner ✨</h2>
+
+      <div class="activity-grid">
+        <div class="activity">
+          <h4>Baking Class 🍰</h4>
+          <p>
+            We can bake something together and keep it as a cute memory from the day.
+          </p>
+        </div>
+
+        <div class="activity">
+          <h4>Art / Museum Date 🖼️</h4>
+          <p>
+            Something slower and more romantic, especially if we want to take nice photos.
+          </p>
+        </div>
+
+        <div class="activity">
+          <h4>Photo Booth / Neoprint 📸</h4>
+          <p>
+            A simple activity, but we get something physical to keep after the date.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">
+      Choose properly ah, I am planning the rest 😌💕
+    </p>
+
+  </main>
+</body>
+</html>
